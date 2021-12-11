@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="utf-8"/>
+        <title>Documentação API</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link href="../../assets/style.css" type="text/css" rel="stylesheet" />
+        <style>
+            /*Reset
+--------------------------------------------*/
+*{ margin: 0; padding: 0; box-sizing: border-box;}
+body{
+    font-family: 'lato', 'sans-serif';
+    color: #fff;
+    background: #2c3e50;
+}
+a{
+    color: #fff;
+    text-decoration: none;
+}
+
+/*Geral
+--------------------------------------------*/
+.row{
+    width: 100%;
+    float: left;
+}
+.content{
+    width: 960px;
+    margin: 0 auto;
+}
+
+
+/*Header
+--------------------------------------------*/
+.header{
+    padding: 30px 0;
+}
+
+
+/*Header-logo
+--------------------------------------------*/
+.header-logo{
+    float: left;
+    position: relative;
+}
+.header-logo::after{
+    content: "";
+    position:absolute;
+    width: 100%;
+    height: 24px;
+    background: #fff;
+    top: -30px;
+    left: 0;
+}
+.header-logo::before{
+    content: "";
+    position:absolute;
+    width: 37%;
+    height: 24px;
+    background: #579add;
+    top: -30px;
+    right: 0;
+    z-index: 2;
+}
+.header-logo h1 a{
+    font-size: 56px;
+    color: #fff;
+}
+.header-logo h1 a span{
+    color: #579add;
+}
+
+/*Destaque
+--------------------------------------------*/
+.destaque{
+    font-size: 26px;
+    text-align: center;
+    margin: 10px, 0, 50px 0;
+}
+
+.destaque .content{
+    width: 800px;
+}
+
+.destaque h1{
+    font-size: 50px;
+    font-weight: normal;
+    color: #579add;
+    margin-bottom: 10px;
+}  
+.destaque p{
+    margin-bottom: 20px;
+}
+.destaque p a{
+    font-size: 18px;
+    border: 1px solid #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+/*Tecnologias
+--------------------------------------------*/
+.tecnologia{
+    background: #fff;
+    padding: 40px 0;
+}
+.tecnologia-title{
+    color: #579add;
+    font-size: 22px;
+    border-bottom: 4px solid #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+.tecnologia-title span{
+    border-bottom: 4px solid #579add;
+    padding-bottom: 10px;
+}
+.tecnologia-col{
+    float: left;
+    margin-right: 4%;
+    color: black;
+}
+
+.tecnologia-col h2{
+    color: #333;
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+/*Footer
+--------------------------------------------*/
+.footer{
+    padding: 30px, 0;
+}
+.footer span{
+    float: left;
+}
+.footer ul{
+    float: right;
+}
+.footer ul li{
+    display: inline-block;
+    text-align: center;
+}
+        </style>
+    </head>
+
+    <body>
+        <!-- start | Header-->
+        <div class="row header">
+            <div class="content">
+                <div class="header-logo">
+                    <h1>
+                        <a href="#" target="_blank">Livros<span>API</span></a>
+                    </h1>
+                </div>
+            </div>
+        </div>
+        <!-- end | Header-->
+
+        <!-- start | Destaque-->
+         <div class="row destaque">
+            <div class="content">
+                <h1>Documentação</h1>
+                    <p>
+                        A documentação vai te ajudar a melhor entender o funcionamento da nossa API e garantir que
+                        você possa aproveitar o máximo possivel dela.
+                    </p>
+            </div>
+        </div>
+        <!-- end | Destaque-->
+
+        <!--start Tecnologias + HTML-->
+        <div class="row tecnologia">
+            <div class="content">
+                <h1 class="tecnologia-title"><span>GET</span></h1>
+                <div class="tecnologia-col">
+                    <h2>localhost:3000/Api/livros</h2>
+                       <p>
+                           O metodo GET é o responsável por exibir os livros resgistrados em nossa API. Nele não é obrigatório ser feito uma passagem de parâmetros 
+                           para que ele possa ser executado com sucesso, mas ele irá retornar todos os livros que estiverem resgistrados. Para buscar um livro
+                           expecifico pode ser passado o seu id como parâmetro.
+                       </p>
+                       <h2>Usando parâmetros</h2>
+                       <p>
+                           Para passar o parâmetro basta adicionar a / e o número do id que deseja buscar no caso do exemplo vamos usar o 2.
+                           localhost:3000/Api/livros/2.
+                       </p><br>
+                       <img src="../../assets/get.png" alt="imagem de uma requisição get">
+                </div>
+            </div>
+        </div>
+
+        <div class="row tecnologia">
+            <div class="content">
+                <h1 class="tecnologia-title"><span>POST</span></h1>
+                <div class="tecnologia-col">
+                    <h2>localhost:3000/Api/livros</h2>
+                        <p>
+                            O método POST é o responsável fazer a requisição de armazenamento para que os dados dos livros
+                            sejam registrados. Nesse metodo é preciso ser passado os dados para que possam ser registrados e esses dados devem ser
+                            passados em formato JSON como podemos ver no exemplo abaixo.
+                        </p><br>
+                        <img src="../../assets/post.png" alt="imagem de uma requisição post">
+                </div>
+            </div>
+        </div>
+
+        <div class="row tecnologia">
+            <div class="content">
+                <h1 class="tecnologia-title"><span>PUT</span></h1>
+                <div class="tecnologia-col">
+                    <h2>localhost:3000/Api/livros</h2>
+                        <p>
+                            O PUT é o metodo que usamos para alterar um dado que já foi registrado no caso da nossa API um livro. No metodo PUT nos devememos primeiramente
+                            fazer o GET para sabermos qual livro vamos alterar depois é só pegar os dados e alterá-los. Se você lembrar do nosso primeiro exemplo no metodo GET
+                            usamos o livro de id 2 chamado Tecnicas de invasão. No exemplo albaixo nos vamos alterar seu nome.
+                        </p><br>
+                        <img src="../../assets/put.png" alt="Alterando o nome do livro">
+                </div>
+            </div>
+        </div>
+
+        <div class="row tecnologia">
+            <div class="content">
+                <h1 class="tecnologia-title"><span>DELETE</span></h1>
+                <div class="tecnologia-col">
+                    <h2>localhost:3000/Api/livros</h2>
+                        <p>
+                            O metodo DELETE apaga todos os registros de livros salvos.
+                        </p>
+                        <h2>Usando parâmetros</h2>
+                        <p>
+                            Para apagar somente um livro é necessário passar o id do livro como parâmeto. No exemplo vamos usar o id de número
+                            2. localhost:3000/Api/livros/2
+                        </p><br>
+                        <img src="deleteAll.png" alt="Excluindo todos os dados registrados">
+                </div>
+            </div>
+        </div>
+        <!-- End | Tecnologias + HTML-->
+
+         <!-- start | Footer-->
+         <div class="row footer">
+             <div class="content">
+                 <span>&copy; 2021 - Cristian Santos</span>
+             </div>
+         </div>
+          <!-- end | Footer-->
+    </body>
+</html>
