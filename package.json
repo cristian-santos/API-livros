@@ -15,10 +15,10 @@
     "dependencies": {
         "babel": "^6.23.0",
         "consign": "^0.1.6",
-        "express": "^4.17.1",
-        "sequelize": "^6.7.0",
-        "sqlite3": "^5.0.2",
         "cors": "^2.8.5",
-        "mysql2": "2.0.2"
+        "express": "^4.17.1",
+        "mysql2": "2.0.2",
+        "sequelize": "^6.7.0",
+        "sqlite3": "^5.0.2"
     }
 }

@@ -24,6 +24,9 @@ app.get("/", function(req, res){
     res.sendFile(__dirname + "/app/view/documentacao.html");
 });
 
+app.get("/inicial", function(req, res){
+    res.sendFile(__dirname + "/app/view/index.html");
+});
 
 require("./app/routes")(app);
 
