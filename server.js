@@ -18,8 +18,6 @@ consign().include("routes").into(app);
 app.set("json spaces", 4);
 consign().include("routes").into(app);
 
-// app.get("/", (req, res) => res.json({status:"API-executando"}));
-
 // Exibindo a documentação completa
 app.get("/", function(req, res){
     res.sendFile(__dirname + "/app/view/documentacao.html");

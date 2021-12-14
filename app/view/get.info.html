@@ -30,7 +30,6 @@ a{
     margin: 0 auto;
 }
 
-
 /*Header
 --------------------------------------------*/
 .header{
@@ -157,13 +156,17 @@ a{
                 <div class="tecnologia-col">
                     <h2>localhost:3000/Api/livros</h2>
                        <p>
-                           O metodo GET é o responsável por exibir os livros resgistrados em nossa API. Nele não é obrigatório ser feito uma passagem de parâmetros 
+                           Quando executamos uma requisição através do método GET os dados são anexados na url em formato de string ou seja além dos dados serem visíveis ela
+                           tem um tamanho limite de dados a serem enviados.
+                        </p></br>
+                        <p>
+                           No caso da nossa API o método GET é o responsável por exibir os livros resgistrados em nossa API. Nele não é obrigatório ser feito uma passagem de parâmetros 
                            para que ele possa ser executado com sucesso, mas ele irá retornar todos os livros que estiverem resgistrados. Para buscar um livro
                            expecifico pode ser passado o seu id como parâmetro.
                        </p>
                        <h2>Usando parâmetros</h2>
                        <p>
-                           Para passar o parâmetro basta adicionar a / e o número do id que deseja buscar no caso do exemplo vamos usar o 2.
+                           Para passar o parâmetro basta adicionar a "/" e o número do id que deseja buscar no caso do exemplo vamos usar o 2.
                            localhost:3000/Api/livros/2.
                        </p><br>
                        <img src="../../assets/get.png" alt="imagem de uma requisição get">
