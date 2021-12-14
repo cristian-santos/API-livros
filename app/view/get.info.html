@@ -3,9 +3,8 @@
 
     <head>
         <meta charset="utf-8"/>
-        <title>Documentação API</title>
+        <title>Info GET</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link href="../../assets/style.css" type="text/css" rel="stylesheet" />
         <style>
 /*Reset
 --------------------------------------------*/
@@ -27,7 +26,7 @@ a{
     float: left;
 }
 .content{
-    width: 960px;
+    width: 1000px;
     margin: 0 auto;
 }
 
@@ -37,7 +36,6 @@ a{
 .header{
     padding: 30px 0;
 }
-
 
 /*Header-logo
 --------------------------------------------*/
@@ -85,9 +83,9 @@ a{
 }
 
 .destaque h1{
-    font-size: 50px;
+    font-size: 35px;
     font-weight: normal;
-    color: #579add;
+    color: #fff;
     margin-bottom: 10px;
 }  
 .destaque p{
@@ -128,21 +126,6 @@ a{
     margin: 10px 0;
 }
 
-/*Footer
---------------------------------------------*/
-.footer{
-    padding: 30px, 0;
-}
-.footer span{
-    float: left;
-}
-.footer ul{
-    float: right;
-}
-.footer ul li{
-    display: inline-block;
-    text-align: center;
-}
         </style>
     </head>
 
@@ -152,7 +135,7 @@ a{
             <div class="content">
                 <div class="header-logo">
                     <h1>
-                        <a href="#" target="_blank">Livros<span>API</span></a>
+                        <a href="#">Livros<span>API</span></a>
                     </h1>
                 </div>
             </div>
@@ -162,11 +145,7 @@ a{
         <!-- start | Destaque-->
          <div class="row destaque">
             <div class="content">
-                <h1>Documentação</h1>
-                    <p>
-                        A documentação vai te ajudar a melhor entender o funcionamento da nossa API e garantir que
-                        você possa aproveitar o máximo possivel dela.
-                    </p>
+                <h1>Informações sobre o método GET</h1>
             </div>
         </div>
         <!-- end | Destaque-->
@@ -191,62 +170,6 @@ a{
                 </div>
             </div>
         </div>
-
-        <div class="row tecnologia">
-            <div class="content">
-                <h1 class="tecnologia-title"><span>POST</span></h1>
-                <div class="tecnologia-col">
-                    <h2>localhost:3000/Api/livros</h2>
-                        <p>
-                            O método POST é o responsável fazer a requisição de armazenamento para que os dados dos livros
-                            sejam registrados. Nesse metodo é preciso ser passado os dados para que possam ser registrados e esses dados devem ser
-                            passados em formato JSON como podemos ver no exemplo abaixo.
-                        </p><br>
-                        <img src="../../assets/post.png" alt="imagem de uma requisição post">
-                </div>
-            </div>
-        </div>
-
-        <div class="row tecnologia">
-            <div class="content">
-                <h1 class="tecnologia-title"><span>PUT</span></h1>
-                <div class="tecnologia-col">
-                    <h2>localhost:3000/Api/livros</h2>
-                        <p>
-                            O PUT é o metodo que usamos para alterar um dado que já foi registrado no caso da nossa API um livro. No metodo PUT nos devememos primeiramente
-                            fazer o GET para sabermos qual livro vamos alterar depois é só pegar os dados e alterá-los. Se você lembrar do nosso primeiro exemplo no metodo GET
-                            usamos o livro de id 2 chamado Tecnicas de invasão. No exemplo albaixo nos vamos alterar seu nome.
-                        </p><br>
-                        <img src="../../assets/put.png" alt="Alterando o nome do livro">
-                </div>
-            </div>
-        </div>
-
-        <div class="row tecnologia">
-            <div class="content">
-                <h1 class="tecnologia-title"><span>DELETE</span></h1>
-                <div class="tecnologia-col">
-                    <h2>localhost:3000/Api/livros</h2>
-                        <p>
-                            O metodo DELETE apaga todos os registros de livros salvos.
-                        </p>
-                        <h2>Usando parâmetros</h2>
-                        <p>
-                            Para apagar somente um livro é necessário passar o id do livro como parâmeto. No exemplo vamos usar o id de número
-                            2. localhost:3000/Api/livros/2
-                        </p><br>
-                        <img src="../../assets/deleteAll.png" alt="Excluindo todos os dados registrados">
-                </div>
-            </div>
-        </div>
         <!-- End | Tecnologias + HTML-->
-
-         <!-- start | Footer-->
-         <div class="row footer">
-             <div class="content">
-                 <span>&copy; 2021 - Cristian Santos</span>
-             </div>
-         </div>
-          <!-- end | Footer-->
     </body>
 </html>

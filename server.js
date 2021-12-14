@@ -18,14 +18,31 @@ consign().include("routes").into(app);
 app.set("json spaces", 4);
 consign().include("routes").into(app);
 
-//app.get("/", (req, res) => res.json({status:"API-executando"}));
+// app.get("/", (req, res) => res.json({status:"API-executando"}));
 
+// Exibindo a documentação completa
 app.get("/", function(req, res){
     res.sendFile(__dirname + "/app/view/documentacao.html");
 });
 
-app.get("/inicial", function(req, res){
-    res.sendFile(__dirname + "/app/view/index.html");
+// Exibindo a info do método GET
+app.get("/get/info", function(req, res){
+    res.sendFile(__dirname + "/app/view/get.info.html");
+});
+
+// Exibindo a info do método POST
+app.get("/post/info", function(req, res){
+    res.sendFile(__dirname + "/app/view/post.info.html");
+});
+
+// Exibindo a info do método PUT
+app.get("/put/info", function(req, res){
+    res.sendFile(__dirname + "/app/view/put.info.html");
+});
+
+// Exibindo a info do método DELETE
+app.get("/delete/info", function(req, res){
+    res.sendFile(__dirname + "/app/view/delete.info.html");
 });
 
 require("./app/routes")(app);
