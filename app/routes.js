@@ -19,7 +19,7 @@ module.exports = app => {
     router.get("/livros", livros.findAllPublished);
 
     // Excluir um registro por id
-    router.delete("/livros:id", livros.delete);
+    router.delete("/livros/:id", livros.delete);
 
     // Excluir todos os registros
     router.delete("/livros", livros.deleteAll);

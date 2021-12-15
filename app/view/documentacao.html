@@ -174,7 +174,7 @@ a{
         <!--start Tecnologias + HTML-->
         <div class="row tecnologia">
             <div class="content">
-                <h1 class="tecnologia-title"><span>GET</span></h1>
+                <a href="get/info"><h1 class="tecnologia-title"><span>GET</span></h1></a>
                 <div class="tecnologia-col">
                     <h2>localhost:3000/Api/livros</h2>
                        <p>
@@ -184,7 +184,7 @@ a{
                        </p>
                        <h2>Usando parâmetros</h2>
                        <p>
-                           Para passar o parâmetro basta adicionar a / e o número do id que deseja buscar no caso do exemplo vamos usar o 2.
+                           Para passar o parâmetro basta adicionar a "/" e o número do id que deseja buscar no caso do exemplo vamos usar o 2.
                            localhost:3000/Api/livros/2.
                        </p><br>
                        <img src="../../assets/get.png" alt="imagem de uma requisição get">
@@ -194,11 +194,11 @@ a{
 
         <div class="row tecnologia">
             <div class="content">
-                <h1 class="tecnologia-title"><span>POST</span></h1>
+                <a href="post/info"><h1 class="tecnologia-title"><span>POST</span></h1></a>
                 <div class="tecnologia-col">
                     <h2>localhost:3000/Api/livros</h2>
                         <p>
-                            O método POST é o responsável fazer a requisição de armazenamento para que os dados dos livros
+                            O método POST é o responsável por fazer a requisição de armazenamento para que os dados dos livros
                             sejam registrados. Nele é preciso ser passado os dados para que possam ser registrados e esses dados devem ser
                             passados em formato JSON como podemos ver no exemplo abaixo.
                         </p><br>
@@ -209,7 +209,7 @@ a{
 
         <div class="row tecnologia">
             <div class="content">
-                <h1 class="tecnologia-title"><span>PUT</span></h1>
+                <a href="put/info"><h1 class="tecnologia-title"><span>PUT</span></h1></a>
                 <div class="tecnologia-col">
                     <h2>localhost:3000/Api/livros</h2>
                         <p>
@@ -224,18 +224,19 @@ a{
 
         <div class="row tecnologia">
             <div class="content">
-                <h1 class="tecnologia-title"><span>DELETE</span></h1>
+                <a href="delete/info"><h1 class="tecnologia-title"><span>DELETE</span></h1></a>
                 <div class="tecnologia-col">
                     <h2>localhost:3000/Api/livros</h2>
                         <p>
                             O método DELETE apaga todos os registros de livros salvos.
-                        </p>
+                        </p><br>
+                        <img src="../../assets/deleteAll.png" alt="Excluindo todos os dados registrados">
                         <h2>Usando parâmetros</h2>
                         <p>
                             Para apagar somente um livro é necessário passar o id do livro como parâmetro. No exemplo vamos usar o id de número
-                            2. localhost:3000/Api/livros/2
+                            3. localhost:3000/Api/livros/3
                         </p><br>
-                        <img src="../../assets/deleteAll.png" alt="Excluindo todos os dados registrados">
+                        <img src="../../assets/deleteAll.png" alt="Excluindo livros por id">
                 </div>
             </div>
         </div>
