@@ -24,22 +24,22 @@ app.get("/", function(req, res){
 });
 
 // Exibindo a info do método GET
-app.get("/get/info", function(req, res){
+app.get("/info-get", function(req, res){
     res.sendFile(__dirname + "/app/view/get.info.html");
 });
 
 // Exibindo a info do método POST
-app.get("/post/info", function(req, res){
+app.get("/info-post", function(req, res){
     res.sendFile(__dirname + "/app/view/post.info.html");
 });
 
 // Exibindo a info do método PUT
-app.get("/put/info", function(req, res){
+app.get("/info-put", function(req, res){
     res.sendFile(__dirname + "/app/view/put.info.html");
 });
 
 // Exibindo a info do método DELETE
-app.get("/delete/info", function(req, res){
+app.get("/info-delete", function(req, res){
     res.sendFile(__dirname + "/app/view/delete.info.html");
 });
 
